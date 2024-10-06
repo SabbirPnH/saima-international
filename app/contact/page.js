@@ -92,7 +92,7 @@ const ContactPage=()=>{
     <div className="mt-8 lg:mt-0">
         <h2 className='text-3xl font-semibold text-[#404A3D]'>Need a functional contact form?</h2>
     <p className="mb-4 text-gray-600 text-center lg:text-left py-2">
-      The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done.{' '}
+      The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you&aposre done.
       <a href="https://htmlcodex.com/contact-form" className="text-[#404A3D] font-semibold">Download Now</a>.
     </p>
     <form>

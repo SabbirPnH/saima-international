@@ -37,13 +37,13 @@ export const About=()=>{
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 pt-4 mb-14">
         {/* First Feature Box */}
         <div>
-          <img className="w-16 h-16 mb-4" src="/img/service.png" alt="Dedicated Services" />
+          <Image className="w-16 h-16 mb-4" src="/img/service.png" alt="Dedicated Services" width={400} height={400}/>
           <h5 className="text-lg font-semibold mb-2 text-[#404A3D]">Dedicated Services</h5>
           <span className="text-justify">Clita erat ipsum et lorem et sit, sed stet lorem sit clita</span>
         </div>
         {/* Second Feature Box */}
         <div>
-          <img className="w-16 h-16 mb-4" src="/img/product.png" alt="Organic Products" />
+          <Image className="w-16 h-16 mb-4" src="/img/product.png" alt="Organic Products" width={400} height={400}/>
           <h5 className="text-lg font-semibold mb-2 text-[#404A3D]">Organic Products</h5>
           <span className="text-justify">Clita erat ipsum et lorem et sit, sed stet lorem sit clita</span>
         </div>
