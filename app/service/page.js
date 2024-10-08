@@ -7,6 +7,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { FaChevronCircleRight } from "react-icons/fa";
 import Link from "next/link";
+import Image from 'next/image';
 export async function generateMetadata() {
   return {
     title: 'Welcome | Samir Group ',
@@ -84,10 +85,11 @@ const BlogItem = ({ blog }) => {
 	return (
 		<article className="rounded-lg">
 			<div className="relative">
-				<img
+				<Image
 					src={image}
 					alt={title}
 					className="h-auto w-full rounded-lg shadow-lg dark:shadow-none"
+					width={400} height={400}
 				/>
 			</div>
 			<div className="py-3">

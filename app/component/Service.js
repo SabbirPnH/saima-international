@@ -17,7 +17,7 @@ const Service = () => {
     </div>
     <div className="mb-6">
       <p className="text-gray-700 text-justify">
-      Urban farming is more than just a trend; it&aposs a sustainable lifestyle choice that allows you to grow your own fresh, organic produce right from your balcony, rooftop, or backyard. Whether you're living in the heart of the city or a suburban area, you can transform small spaces into flourishing gardens filled with vegetables, herbs, and even fruits.
+      Urban farming is more than just a trend it&aposs a sustainable lifestyle choice that allows you to grow your own fresh, organic produce right from your balcony, rooftop, or backyard. Whether you&aposre living in the heart of the city or a suburban area, you can transform small spaces into flourishing gardens filled with vegetables, herbs, and even fruits.
       </p>
     </div>
     <div className="mb-4">
