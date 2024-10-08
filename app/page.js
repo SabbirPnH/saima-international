@@ -5,12 +5,12 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { About } from "./component/About";
 import { Carousel } from "./component/Crousel";
-import ScrollBanner from "./component/ScrollBanner";
+// import ScrollBanner from "./component/ScrollBanner";
 import Service from "./component/Service";
 import WhyUs from "./component/WhyUs";
 import Gallery from "./component/Gallery";
 import Products from "./component/Product";
-import Barnd from "./component/Brand";
+// import Barnd from "./component/Brand";
 
 
 export default function Home() {
@@ -27,11 +27,11 @@ export default function Home() {
       <Carousel/>
       <About />
       <WhyUs/>
-      <ScrollBanner/>
+      {/* <ScrollBanner/> */}
       <Service/>
       <Gallery/>
       <Products/>
-      <Barnd/>
+      {/* <Barnd/> */}
     </div>
   );
 }

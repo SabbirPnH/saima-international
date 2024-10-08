@@ -1,112 +1,102 @@
-import Image from "next/image";
+
+import Link from "next/link";
 import React from "react";
-import { RxBorderStyle } from "react-icons/rx";
-import { FaAnglesRight } from "react-icons/fa6";
+
 const Service = () => {
   return (
-    <div className="px-4 sm:px-20 bg-slate-100 py-10">
-      {/* Section Header */}
-      <div className="text-center pb-6" style={{ maxWidth: "500px", margin: "0 auto" }}>
-      <p className="text-[#5B8C51] flex justify-center text-lg font-semibold uppercase  inline-block py-1 rounded pt-3 sm:pt-0 sm:mb-2 flex items-center">
-  <RxBorderStyle className="inline-flex text-2xl font-semibold mr-2" />
-   Our Service 
-  <RxBorderStyle className="inline-flex text-2xl font-semibold ml-2" />
-</p>
 
-        <h1 className="mb-5 text-3xl lg:text-5xl font-bold text-[#404A3D]">Services That We Offer Entrepreneurs</h1>
-      </div>
 
-      {/* Services Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {/* Service 1 */}
-        <div className="relative bg-white flex flex-col h-full overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
-          <div className="absolute inset-0 transition-opacity duration-500 opacity-0 hover:opacity-100">
-            <Image
-              className="w-full h-full object-cover"
-              src="/img/fish (1).jpg"
-              alt="Best Animal Selection"
-              width={400} height={400}
-            />
-          </div>
-          <div className="flex-none p-6">
-            <Image
-              className="w-20 h-20 object-cover border-4 border-[#EDDD5E] rounded-full"
-              src="/img/fish (1).jpg"
-              alt="Care & Milking"
-              width={400} height={400}
-            />
-          </div>
-          <div className="p-5 flex-grow bg-white">
-            <h5 className="text-xl font-semibold text-[#404A3D]">Best fish Selection</h5>
-            <p className="text-gray-600 mb-4 text-[#404A3D]">
-              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.
-            </p>
-            <a className="inline-block bg-[#5B8C51] text-white rounded-full px-2 py-2" href="#">
-            <FaAnglesRight />
-            </a>
-          </div>
-        </div>
+<div className="px-4 sm:px-20">
+<h6 className="text-[#5B8C51] sm:pb-10 text-lg font-semibold uppercase flex justify-center bg-white inline-block  py-1 rounded  pt-3 sm:pt-0 sm:mb-2">Our Services</h6>
+<div className=" flex flex-wrap ">
+  <div className="w-full md:w-1/2  animated fadeInLeft">
+    <div className="mb-6">
+    </div>
+    <div className="mb-6">
+      <h2 className="text-lg lg:text-2xl font-bold mb-4 text-[#404A3D] text-justify uppercase">Start Your Urban Farming Journey Today!</h2>
+    </div>
+    <div className="mb-6">
+      <p className="text-gray-700 text-justify">
+      Urban farming is more than just a trend; it&aposs a sustainable lifestyle choice that allows you to grow your own fresh, organic produce right from your balcony, rooftop, or backyard. Whether you're living in the heart of the city or a suburban area, you can transform small spaces into flourishing gardens filled with vegetables, herbs, and even fruits.
+      </p>
+    </div>
+    <div className="mb-4">
+  <div className="mb-2">
+    {/* Flex container to align percentage and label */}
+    <div className="flex justify-between mb-4">
+      <span className="font-semibold">Urban Food Security Rates</span>
+      <span className="ml-2">57%</span>
+    </div>
+    
+    {/* Progress bar */}
+    <div className="relative w-full h-2 bg-gray-200 rounded">
+      <div
+        className="absolute top-0 left-0 h-2 bg-[#5B8C51] rounded"
+        style={{ width: '57%' }} // 57% width for 57% progress
+      />
+    </div>
+  </div>
+</div>
+<div className="mb-4">
+  <div className="mb-2">
+    {/* Flex container to align percentage and label */}
+    <div className="flex justify-between mb-4">
+      <span className=" font-semibold ">Community Engagement and Participation</span>
+      <span className="ml-2">65%</span>
+    </div>
+    
+    {/* Progress bar */}
+    <div className="relative w-full h-2 bg-gray-200 rounded">
+      <div
+        className="absolute top-0 left-0 h-2 bg-[#5B8C51] rounded"
+        style={{ width: '65%' }} // 87% width for 87% progress
+      />
+    </div>
+  </div>
+</div>
+<div className="mb-4">
+  <div className="mb-2">
+    {/* Flex container to align percentage and label */}
+    <div className="flex justify-between mb-4">
+      <span className="font-semibold">Produce Yield and Crop Quality Improvement</span>
+      <span className="ml-2">81%</span>
+    </div>
+    
+    {/* Progress bar */}
+    <div className="relative w-full h-2 bg-gray-200 rounded">
+      <div
+        className="absolute top-0 left-0 h-2 bg-[#5B8C51] rounded"
+        style={{ width: '81%' }} // 25% width for 25% progress
+      />
+    </div>
+  </div>
+</div>
 
-        {/* Service 2 */}
-        <div className="relative bg-white flex flex-col h-full overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
-          <div className="absolute inset-0 transition-opacity duration-500 opacity-0 hover:opacity-100">
-            <Image
-              className="w-full h-full object-cover"
-              src="/img/fish (2).jpg"
-              alt="Breeding & Veterinary"
-              width={400} height={400}
-            />
-          </div>
-          <div className="flex-none p-6">
-            <Image
-              className="w-20 h-20 object-cover border-4 border-[#EDDD5E] rounded-full"
-              src="/img/fish (2).jpg"
-              alt="Care & Milking"
-              width={400} height={400}
-            />
-          </div>
-          <div className="p-5 flex-grow bg-white">
-            <h5 className="text-xl font-semibold text-[#404A3D]">Fish Care Essentials</h5>
-            <p className="text-gray-600 mb-4 text-[#404A3D]">
-              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.
-            </p>
-            <a className="inline-block bg-[#5B8C51] text-white rounded-full px-2 py-2" href="#">
-            <FaAnglesRight />
-            </a>
-          </div>
-        </div>
-
-        {/* Service 3 */}
-        <div className="relative bg-white flex flex-col h-full overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
-          <div className="absolute inset-0 transition-opacity duration-500 opacity-0 hover:opacity-100">
-            <Image
-              className="w-full h-full object-cover"
-              src="/img/fish (3).jpg"
-              alt="Care & Milking"
-              width={400} height={400}
-            />
-          </div>
-          <div className="flex-none p-6">
-            <Image
-              className="w-20 h-20 object-cover border-4 border-[#EDDD5E] rounded-full"
-              src="/img/fish (3).jpg"
-              alt="Care & Milking"
-              width={400} height={400}
-            />
-          </div>
-          <div className="p-5 flex-grow bg-white">
-            <h5 className="text-xl font-semibold text-[#404A3D]">Care & Fishing</h5>
-            <p className="text-gray-600 mb-4 text-[#404A3D]">
-              Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.
-            </p>
-            <a className="inline-block bg-[#5B8C51] text-white rounded-full px-2 py-2" href="#">
-            <FaAnglesRight />
-            </a>
+    <div className="my-5 sm:mt-8 ">
+    <Link href={"/service"} className="bg-[#EDDD5E] rounded-full py-3 px-6 text-lg hover:text-black  text-[#404A3D]">Read More</Link>
+    </div>
+  </div>
+  <div className="w-full md:w-1/2 sm:px-4">
+    <div className="mb-6 animated fadeInUp">
+      <img className="w-full h-auto rounded sm:pt-8" src="https://demo.creativemox.com/urbangrove/wp-content/uploads/sites/5/2023/09/woman-in-a-apron-working-in-a-greenhouse-e1694264229766.jpg" alt="Woman in a apron working in a greenhouse" />
+    </div>
+    <div className="absolute -top-16 left-4">
+      <div className="bg-white p-4 rounded shadow-lg">
+        <div className="flex items-center mb-4">
+          <span className="text-green-500 text-3xl">
+            <i className="fas fa-seedling" />
+          </span>
+          <div className="ml-2">
+            <h3 className="text-lg font-semibold">Discover the Future of Agriculture</h3>
+            <p className="text-gray-600">Gravida rutrum metus erat porta natoque consectetuer lorem luctus sapien pretium felis</p>
           </div>
         </div>
       </div>
     </div>
-  );
-};
+  </div>
+</div>
+
+</div>
+)};
 
 export default Service;

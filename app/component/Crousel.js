@@ -16,32 +16,39 @@ import Image from 'next/image'; // Import the Next.js Image component
 
 // Array of image sources
 const images = [
-  '/img/01.jpg',
-  '/img/slider-3.jpg',
-  '/img/slider-1.jpg',
+  '/img/banner (1).jpg',
+  '/img/close-up-variety-fresh-fishes-ice.jpg',
+  '/img/banner (2).jpg',
+  '/img/StockCake-Farmyard Chicken Gathering_1728188585.jpg',
+  '/img/StockCake-Duck Family Outing_1728189158.jpg',
 ];
 
 // Array of titles, subtitles, and button texts for each slide
 const content = [
   {
-    title: 'Gear Up for Your Next Fishing Expedition',
-    subtitle: 'There are many variations of passages orem psum available but the majority have suffered alteration in some form by injected humour.',
-    buttonText: 'Explore More',
+    title: 'WELCOME TO SAIMON AGRO & FISHERIES FARM.',
+    subtitle: 'Organic Products from Saimon Agro & Fisheries Farm would likely focus on producing agricultural and fishery items that are grown or raised using natural.',
+    buttonText: 'Read More',
   },
   {
-    title: 'The Farm of Fish products',
-    subtitle: 'There are many variations of passages orem psum available but the majority have suffered alteration in some form by injected humour.',
-    buttonText: 'Explore More',
+    title: 'WELCOME TO SAIMON AGRO & FISHERIES FARM.',
+    subtitle: 'Organic Products from Saimon Agro & Fisheries Farm would likely focus on producing agricultural and fishery items that are grown or raised using natural.',
+    buttonText: 'Read More',
   },
   {
-    title: 'Best Organic Fish Products',
-    subtitle: 'There are many variations of passages orem psum available but the majority have suffered alteration in some form by injected humour.',
-    buttonText: 'Shop Now',
+    title: 'WELCOME TO SAIMON AGRO & FISHERIES FARM.',
+    subtitle: 'Organic Products from Saimon Agro & Fisheries Farm would likely focus on producing agricultural and fishery items that are grown or raised using natural.',
+    buttonText: 'Read More',
   },
   {
-    title: 'Nature’s Goodness',
-    subtitle: 'There are many variations of passages orem psum available but the majority have suffered alteration in some form by injected humour.',
-    buttonText: 'Learn More',
+    title: 'WELCOME TO SAIMON AGRO & FISHERIES FARM.',
+    subtitle: 'Organic Products from Saimon Agro & Fisheries Farm would likely focus on producing agricultural and fishery items that are grown or raised using natural.',
+    buttonText: 'Read Now',
+  },
+  {
+    title: 'WELCOME TO SAIMON AGRO & FISHERIES FARM.',
+    subtitle: 'Organic Products from Saimon Agro & Fisheries Farm would likely focus on producing agricultural and fishery items that are grown or raised using natural.',
+    buttonText: 'Read More',
   },
 
 ];
@@ -65,9 +72,9 @@ export const Carousel = () => {
               {/* Overlay */}
               <div className="absolute inset-0 bg-black opacity-40" /> {/* Adjust the opacity as needed */}
               <div className="absolute inset-0 flex items-center justify-center sm:justify-start px-4 sm:px-20 z-10">
-              <div className="text-center sm:text-left text-white max-w-lg"> {/* Added max-w-md for limiting width */}
-  <h1 className="text-2xl lg:text-5xl font-bold mb-2 ">{content[index].title}</h1>
-  <p className="text-lg mb-4 py-3 line-clamp-2 sm:line-clamp-none ">{content[index].subtitle}</p>
+              <div className="text-center sm:text-left text-white max-w-3xl"> {/* Added max-w-md for limiting width */}
+  <h1 className="text-md lg:text-5xl  sm:font-bold mb-2">{content[index].title}</h1>
+  <p className="text-sm sm:text-lg mb-4 py-3 ">{content[index].subtitle}</p>
   <button className="bg-[#EDDD5E] rounded-full py-2.5 sm:py-4 px-8 text-lg hover:text-black  text-[#404A3D]">
     {content[index].buttonText}
   </button>

@@ -63,7 +63,7 @@ const Navbar = () => {
           <div className="flex space-x-6">
             <div className="flex items-center text-[#33372C] bg-[#EDDD5E] py-3.5 px-4">
               <IoCall className="text-[#33372C] mr-2" />
-              <span className="text-md">Call Us: +123456789</span>
+              <span className="text-md">Call Us: +01716-537772</span>
             </div>
           </div>
         </div>
@@ -98,6 +98,11 @@ const Navbar = () => {
             <Link href={"/service"} onClick={() => setActiveLink("/service")}>
               <li className={`mr-8 list-none ${activeLink === "/service" ? "text-[#5b8c51]" : "text-[#404A3D]"}`}>
                 service
+              </li>
+            </Link>
+            <Link href={"/product"} onClick={() => setActiveLink("/product")}>
+              <li className={`mr-8 list-none ${activeLink === "/product" ? "text-[#5b8c51]" : "text-[#404A3D]"}`}>
+               Product
               </li>
             </Link>
             <Link href={"/contact"} onClick={() => setActiveLink("/contact")}>
@@ -165,6 +170,11 @@ const Navbar = () => {
             <Link href={"/service"} onClick={() => setActiveLink("/service")}>
               <li className={`block px-3 py-2 ${activeLink === "/service" ? "text-[#5b8c51]" : "text-[#404A3D]"}  list-none`}>
                 service
+              </li>
+            </Link>
+            <Link href={"/product"} onClick={() => setActiveLink("/product")}>
+              <li className={`block px-3 py-2 ${activeLink === "/product" ? "text-[#5b8c51]" : "text-[#404A3D]"}  list-none`}>
+                Product
               </li>
             </Link>
             <Link href={"/contact"} onClick={() => setActiveLink("/contact")}>
