@@ -21,7 +21,7 @@ const ContactPage=()=>{
     <div className="container mx-auto text-center">
       {/* Heading */}
       <h1 className=" text-4xl sm:text-6xl font-semibold text-white mb-3 animate-slide-in-down">
-       Contact
+       Contact Us
       </h1>
       {/* Breadcrumb Navigation */}
       <nav aria-label="breadcrumb">
@@ -30,7 +30,7 @@ const ContactPage=()=>{
             <Link href={"/"} className="text-[#EDDD5E] text-lg">Home </Link>
           </li>
           <li><FaChevronRight /></li>
-          <li className="text-white text-lg"> Contact</li>
+          <li className="text-white text-lg"> Contact Us</li>
         </ol>
       </nav>
     </div>
@@ -38,11 +38,7 @@ const ContactPage=()=>{
 </div>
 <div className="px-4 sm:px-20 py-10">
 <div className="text-center pb-6" style={{ maxWidth: "500px", margin: "0 auto" }}>
-      <p className="text-[#5B8C51] flex justify-center text-lg font-semibold uppercase  inline-block py-1 rounded pt-3 sm:pt-0 sm:mb-2 flex items-center">
-  <RxBorderStyle className="inline-flex text-2xl font-semibold mr-2" />
-   Contact
-  <RxBorderStyle className="inline-flex text-2xl font-semibold ml-2" />
-</p>
+
 
         
       </div>
@@ -114,11 +110,8 @@ const ContactPage=()=>{
 
     </div>
     <div className="mt-8 lg:mt-0">
-        <h2 className=' text-lg sm:text-3xl font-semibold text-[#404A3D]'>Need a functional contact form?</h2>
-    <p className="mb-4 text-gray-600 text-center  text-justify lg:text-left py-2">
-      The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you&aposre done.
-      <a href="#" className="text-[#404A3D] font-semibold">Download Now</a>.
-    </p>
+        <h2 className=' text-lg sm:text-3xl font-semibold text-[#404A3D] pb-7'>Need a functional contact form?</h2>
+   
     <form>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {/* Input Fields */}
