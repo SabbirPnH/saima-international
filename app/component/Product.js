@@ -7,7 +7,7 @@ const products = [
 	{
 		img: "/img/product (1).png",
 		title: "Cow",
-		price: "345.00",
+		price: "945.00",
 		rating: "4.6",
 	},
 	{
@@ -25,31 +25,31 @@ const products = [
 	{
 		img: "/img/product (2).png",
 		title: "Bitter Gourd",
-		price: "427.00",
+		price: "227.00",
 		rating: "4.5",
 	},
 	{
 		img: "/img/istockphoto-146776721-612x612.jpg",
 		title: "Goat",
-		price: "427.00",
+		price: "527.00",
 		rating: "4.5",
 	},
 	{
 		img: "/img/products (1).jpg",
 		title: "Chilli",
-		price: "427.00",
+		price: "285.00",
 		rating: "4.5",
 	},
 	{
 		img: "/img/products (2).jpg",
 		title: "Duck",
-		price: "427.00",
+		price: "784.00",
 		rating: "4.5",
 	},
 	{
 		img: "/img/products (3).jpg",
 		title: "Fish",
-		price: "427.00",
+		price: "128.00",
 		rating: "4.5",
 	},
 ];

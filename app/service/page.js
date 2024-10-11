@@ -149,7 +149,7 @@ const ServicePage = () => {
                       </div>
                       <div>
                           <h3 className="text-lg font-semibold">100% Organic</h3>
-                          <p className="text-gray-600 text-justify">Nisi eget venenatis felis posuere aptent aenean ipsum.</p>
+                          <p className="text-gray-600 text-justify">Our food is grown without the use of synthetic pesticides, herbicides</p>
                       </div>
                   </div>
   
@@ -160,7 +160,7 @@ const ServicePage = () => {
                       </div>
                       <div>
                           <h3 className="text-lg font-semibold">Premium Quality</h3>
-                          <p className="text-gray-600 text-justify">Nisi eget venenatis felis posuere aptent aenean ipsum.</p>
+                          <p className="text-gray-600 text-justify">From farm to table, we ensure that every product meets our high standards of quality.</p>
                       </div>
                   </div>
               </div>
