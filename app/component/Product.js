@@ -1,118 +1,88 @@
-import React from "react";
-import { FaHeart, FaShoppingCart, FaStar } from "react-icons/fa"; 
-import PropTypes from "prop-types";
-import { RxBorderStyle } from "react-icons/rx";
-import Image from "next/image";
-const products = [
-	{
-		img: "/img/product (1).png",
-		title: "Cow",
-		price: "945.00",
-		rating: "4.6",
-	},
-	{
-		img: "/img/product (5).jpg",
-		title: "Chicken",
-		price: "125.00",
-		rating: "4.1",
-	},
-	{
-		img: "/img/product (6).jpg",
-		title: "Pigeon",
-		price: "525.00",
-		rating: "4.9",
-	},
-	{
-		img: "/img/product (2).png",
-		title: "Bitter Gourd",
-		price: "227.00",
-		rating: "4.5",
-	},
-	{
-		img: "/img/istockphoto-146776721-612x612.jpg",
-		title: "Goat",
-		price: "527.00",
-		rating: "4.5",
-	},
-	{
-		img: "/img/products (1).jpg",
-		title: "Chilli",
-		price: "285.00",
-		rating: "4.5",
-	},
-	{
-		img: "/img/products (2).jpg",
-		title: "Duck",
-		price: "784.00",
-		rating: "4.5",
-	},
-	{
-		img: "/img/products (3).jpg",
-		title: "Fish",
-		price: "128.00",
-		rating: "4.5",
-	},
-];
-
-const ProductItem = ({ product }) => {
-	return (
-		<div className=" bg-slate-200">
-			<div className="relative">
-				
-				<a href="#!">
-					<Image src={product.img} alt={product.title} className="w-full h-44" width={400} height={400}/>
-				</a>
-			</div>
-			<div className="py-4 lg:py-6 text-start px-2">
-				<a href="#!">
-					<h5 className="text-[17px] text-[#404A3D] font-medium">{product.title}</h5>
-				</a>
-				<div className="flex justify-between items-center">
-					<h5 className="text-[#5B8C51] font-medium text-[17px] leading-none my-2">
-						${product.price}
-					</h5>
-					<a href="#!">
-						<h5 className="hover:text-[#5B8C51]">
-							<FaShoppingCart /> 
-						</h5>
-					</a>
-				</div>
-			</div>
-		</div>
-	);
-};
-
-ProductItem.propTypes = {
-	product: PropTypes.object.isRequired,
-};
-
-const Products = () => {
-	return (
-		<section className="light sm:py-10   text-zinc-900 dark:text-white relative overflow-hidden ">
-			<div className="px-4 sm:px-20">
-            <div className="text-center sm:pb-6" style={{ maxWidth: "500px", margin: "0 auto" }}>
-      <p className="text-[#5B8C51] flex justify-center text-lg font-semibold uppercase  inline-block py-1 rounded pt-3 sm:pt-0 sm:mb-2 flex items-center">
-  <RxBorderStyle className="inline-flex text-2xl font-semibold mr-2" />
-   Our Products
-  <RxBorderStyle className="inline-flex text-2xl font-semibold ml-2" />
-</p>
-
-        <h1 className="mb-5 text-lg lg:text-2xl font-bold text-[#404A3D]">Our Products For Healthy Living</h1>
+const Product=()=>{
+    return(
+       <div className="px-4 sm:px-16" id="product">
+    <h5 className="text-2xl text-center py-8 uppercase font-bold pb-4 text-[#F62459]"> our Products </h5>
+    <p className="text-[#596277] capitalize text-justify  sm:px-44 text-center pb-6 leading-relaxed   ">
+    Cloth,shoes & fabric items jdm and german any type of car parts ( modification parts, performance upgrade parts, German car spare parts & jdm car spare parts and garment products)
+             
+            </p>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="bg-white rounded overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all">
+      <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
+        <img src="/img/Studio-cloth-house_1620x630.webp" alt="Product 1" className="h-full w-full object-cover object-top" />
       </div>
+      <div className="p-4">
+        <h3 className="text-lg font-bold text-[#1a2d4e]">Cloth Fabric</h3>
+       
+      </div>
+    </div>
+    <div className="bg-white rounded overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all">
+      <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
+        <img src="/img/6502ea35eac4cbdc199499e394609c5f.jpg_720x720q80.jpg" alt="Product 2" className="h-full w-full object-cover object-top" />
+      </div>
+      <div className="p-4">
+        <h3 className="text-lg font-bold text-[#1a2d4e]">Casual Lace-up Shoes </h3>
+       
+      </div>
+    </div>
+    <div className="bg-white rounded overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all">
+      <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
+        <img src="/img/H5a83ba1b8e5643fb80d9fa6e6a64edc6q.jpg_300x300.jpg" alt="Product 3" className="h-full w-full object-cover object-top" />
+      </div>
+      <div className="p-4">
+        <h3 className="text-lg font-bold text-[#1a2d4e]">German Car Parts</h3>
+       
+      </div>
+    </div>
+   
+    <div className="bg-white rounded overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all">
+      <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
+        <img src="/img/garment.png" alt="Product 3" className="h-full w-full object-cover object-top" />
+      </div>
+      <div className="p-4">
+        <h3 className="text-lg font-bold text-[#1a2d4e]">Garment Products</h3>
+      
+      </div>
+    </div>
+    <div className="bg-white rounded overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all">
+      <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
+        <img src="/img/plain-cotton-fabric-500x500.webp" alt="Product 3" className="h-full w-full object-cover object-top" />
+      </div>
+      <div className="p-4">
+        <h3 className="text-lg font-bold text-[#1a2d4e]">Fabric items</h3>
+       
+      </div>
+    </div>
+    <div className="bg-white rounded overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all">
+      <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
+        <img src="/img/landscape-1473715589-performance-car-parts.jpg" alt="Product 3" className="h-full w-full object-cover object-top" />
+      </div>
+      <div className="p-4">
+        <h3 className="text-lg font-bold text-[#1a2d4e]">Modification Parts</h3>
+       
+      </div>
+    </div>
+    <div className="bg-white rounded overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all">
+      <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
+        <img src="/img/81vK+yiiquL._AC_UF350,350_QL80_.jpg" alt="Product 3" className="h-full w-full object-cover object-top" />
+      </div>
+      <div className="p-4">
+        <h3 className="text-lg font-bold text-[#1a2d4e]">Fabric items</h3>
+       
+      </div>
+    </div>
+    <div className="bg-white rounded overflow-hidden shadow-md cursor-pointer hover:scale-[1.02] transition-all">
+      <div className="w-full aspect-w-16 aspect-h-8 lg:h-80">
+        <img src="/img/AdobeStock_587768652-640w.webp" alt="Product 3" className="h-full w-full object-cover object-top" />
+      </div>
+      <div className="p-4">
+        <h3 className="text-lg font-bold text-[#1a2d4e]">Performance Upgrade Parts</h3>
+      
+      </div>
+    </div>
+  </div>
+</div>
 
-				<div className="grid grid-cols-12  text-center justify-start xl:justify-center ">
-					{products.map((product, i) => (
-						<div
-							className="col-span-12 sm:col-span-6 xl:col-span-3 p-2"
-							key={i}
-						>
-							<ProductItem product={product} />
-						</div>
-					))}
-				</div>
-			</div>
-		</section>
-	);
-};
-
-export default Products;
+    )
+}
+export default Product;

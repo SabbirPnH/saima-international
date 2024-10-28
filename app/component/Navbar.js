@@ -37,13 +37,13 @@ const Navbar = () => {
     <div>
       {/* Topbar - Initially Fixed */}
       <div
-        className={`bg-[#33372C] p-0 transition-all duration-300 fixed top-0 w-full z-50 ${isTopbarVisible ? "block" : "hidden"
+        className={`bg-[#F62459] p-0 transition-all duration-300 fixed top-0 w-full z-50 ${isTopbarVisible ? "block" : "hidden"
           }`}
       >
         <div className="hidden lg:flex justify-between items-center pl-4 sm:pl-10">
           <div className="flex items-center space-x-6">
             <div className="flex items-center py-3">
-              <span className="text-lg font-semibold text-[#EDDD5E]">Flow Us :</span>
+              <span className="text-lg font-semibold text-[#1a2d4e]">Flow Us :</span>
             </div>
             <div className="flex items-center space-x-2">
               <a className=" text-white p-2" href="#">
@@ -61,11 +61,14 @@ const Navbar = () => {
             </div>
           </div>
           <div className="flex space-x-6">
-            <div className="flex items-center text-[#33372C] bg-[#EDDD5E] py-3.5 px-4">
-              <IoCall className="text-[#33372C] mr-2" />
-              <span className="text-md">Call Us: +01716-537772</span>
-            </div>
-          </div>
+  <div className="flex items-center text-[#33372C] bg-[#EBEFF3] py-3.5 px-4">
+    <IoCall className="text-[#33372C] mr-2" />
+    <a href="tel:+01716-537772" className="text-md">
+      Call Us: +01716-537772
+    </a>
+  </div>
+</div>
+
         </div>
       </div>
 
@@ -80,33 +83,33 @@ const Navbar = () => {
             href={"/"}
             className="flex flex-shrink-0 title-font font-medium items-center text-gray-900 md:mb-0"
           >
-            <Image className="h-12 w-52" src="/img/tv10 (1).png" alt="logo-image" width={400} height={400} />
+            <Image className="h-12 w-52" src="/img/saima-logo.png" alt="logo-image" width={400} height={400} />
           </Link>
 
           {/* Navbar Links */}
           <nav className="hidden md:ml-auto md:flex flex-wrap items-center justify-center text-base tracking-wide">
             <Link href={"/"} onClick={() => setActiveLink("/")}>
-              <li className={`mr-8 list-none ${activeLink === "/" ? "text-[#5b8c51]" : "text-[#404A3D]"}`}>
+              <li className={`mr-8 list-none ${activeLink === "/" ? "text-[#F62459]" : "text-[#1a2d4e]"}`}>
                 home
               </li>
             </Link>
-            <Link href={"/about"} onClick={() => setActiveLink("/about")}>
-              <li className={`mr-8 list-none ${activeLink === "/about" ? "text-[#5b8c51]" : "text-[#404A3D]"}`}>
+            <Link href={"#about"} onClick={() => setActiveLink("/about")}>
+              <li className={`mr-8 list-none ${activeLink === "/about" ? "text-[#F62459]" : "text-[#1a2d4e]"}`}>
                 about
               </li>
             </Link>
-            <Link href={"/service"} onClick={() => setActiveLink("/service")}>
-              <li className={`mr-8 list-none ${activeLink === "/service" ? "text-[#5b8c51]" : "text-[#404A3D]"}`}>
+            <Link href={"#service"} onClick={() => setActiveLink("/service")}>
+              <li className={`mr-8 list-none ${activeLink === "/service" ? "text-[#F62459]" : "text-[#1a2d4e]"}`}>
                 service
               </li>
             </Link>
-            <Link href={"/product"} onClick={() => setActiveLink("/product")}>
-              <li className={`mr-8 list-none ${activeLink === "/product" ? "text-[#5b8c51]" : "text-[#404A3D]"}`}>
+            <Link href={"#product"} onClick={() => setActiveLink("/product")}>
+              <li className={`mr-8 list-none ${activeLink === "/product" ? "text-[#F62459]" : "text-[#1a2d4e]"}`}>
                Product
               </li>
             </Link>
-            <Link href={"/contact"} onClick={() => setActiveLink("/contact")}>
-              <li className={`list-none ${activeLink === "/contact" ? "text-[#5b8c51]" : "text-[#404A3D]"}`}>
+            <Link href={"#contact"} onClick={() => setActiveLink("/contact")}>
+              <li className={`list-none ${activeLink === "/contact" ? "text-[#F62459]" : "text-[#1a2d4e]"}`}>
                 Contact
               </li>
             </Link>
@@ -120,7 +123,7 @@ const Navbar = () => {
             {isOpen ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 rounded-md text-[#404A3D]"
+                className="h-8 w-8 rounded-md text-[#1a2d4e]"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -135,7 +138,7 @@ const Navbar = () => {
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-8 w-8 rounded-md text-[#404A3D]"
+                className="h-8 w-8 rounded-md text-[#1a2d4e]"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -158,27 +161,27 @@ const Navbar = () => {
         >
           <div className="flex flex-col py-4 px-3 md:hidden text-base uppercase font-semibold">
             <Link href={"/"} onClick={() => setActiveLink("/")}>
-              <li className={`block px-3 py-2 ${activeLink === "/" ? "text-[#5b8c51]" : "text-[#404A3D]"}  list-none`}>
+              <li className={`block px-3 py-2 ${activeLink === "/" ? "text-[#F62459]" : "text-[#1a2d4e]"}  list-none`}>
                 home
               </li>
             </Link>
-            <Link href={"/about"} onClick={() => setActiveLink("/about")}>
-              <li className={`block px-3 py-2 ${activeLink === "/about" ? "text-[#5b8c51]" : "text-[#404A3D]"}  list-none`}>
+            <Link href={"#about"} onClick={() => setActiveLink("/about")}>
+              <li className={`block px-3 py-2 ${activeLink === "/about" ? "text-[#F62459]" : "text-[#1a2d4e]"}  list-none`}>
                 about
               </li>
             </Link>
-            <Link href={"/service"} onClick={() => setActiveLink("/service")}>
-              <li className={`block px-3 py-2 ${activeLink === "/service" ? "text-[#5b8c51]" : "text-[#404A3D]"}  list-none`}>
+            <Link href={"#service"} onClick={() => setActiveLink("/service")}>
+              <li className={`block px-3 py-2 ${activeLink === "/service" ? "text-[#F62459]" : "text-[#1a2d4e]"}  list-none`}>
                 service
               </li>
             </Link>
-            <Link href={"/product"} onClick={() => setActiveLink("/product")}>
-              <li className={`block px-3 py-2 ${activeLink === "/product" ? "text-[#5b8c51]" : "text-[#404A3D]"}  list-none`}>
+            <Link href={"#product"} onClick={() => setActiveLink("/product")}>
+              <li className={`block px-3 py-2 ${activeLink === "/product" ? "text-[#F62459]" : "text-[#1a2d4e]"}  list-none`}>
                 Product
               </li>
             </Link>
-            <Link href={"/contact"} onClick={() => setActiveLink("/contact")}>
-              <li className={`block px-3 py-2 ${activeLink === "/contact" ? "text-[#5b8c51]" : "text-[#404A3D]"}  list-none`}>
+            <Link href={"#contact"} onClick={() => setActiveLink("/contact")}>
+              <li className={`block px-3 py-2 ${activeLink === "/contact" ? "text-[#F62459]" : "text-[#1a2d4e]"}  list-none`}>
                 Contact
               </li>
             </Link>

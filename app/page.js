@@ -3,14 +3,12 @@
 import { useEffect } from "react";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import { About } from "./component/About";
-import { Carousel } from "./component/Crousel";
-// import ScrollBanner from "./component/ScrollBanner";
+import HeroSection from "./component/HeroSection";
+import About from "./component/About";
 import Service from "./component/Service";
-import WhyUs from "./component/WhyUs";
-import Gallery from "./component/Gallery";
-import Products from "./component/Product";
-// import Barnd from "./component/Brand";
+import Product from "./component/Product";
+import ContactPage from "./component/Contact";
+
 
 
 export default function Home() {
@@ -24,14 +22,11 @@ export default function Home() {
 
   return (
     <div>
-      <Carousel/>
-      <About />
-      <WhyUs/>
-      {/* <ScrollBanner/> */}
+      <HeroSection/>
+      <About/>
       <Service/>
-      <Gallery/>
-      <Products/>
-      {/* <Barnd/> */}
+     <Product/>
+     <ContactPage/>
     </div>
   );
 }
